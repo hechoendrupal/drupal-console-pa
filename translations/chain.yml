@@ -11,3 +11,7 @@ messages:
     set-environment-placeholders: 'ਦੇ ਤੌਰ ਤੇ ਵਾਤਾਵਰਣ ਨੂੰ ਸਥਾਨਧਾਰਕ ਸੈੱਟ ਕਰੋ'
     missing-inline-placeholders: 'ਗੁੰਮ ਇਨਲਾਈਨ ਸਥਾਨਧਾਰਕ "%s"'
     set-inline-placeholders: 'ਦੇ ਤੌਰ ਤੇ ਇਨਲਾਈਨ ਸਥਾਨਧਾਰਕ ਸੈੱਟ ਕਰੋ'
+examples:
+    -
+        description: 'Providing a file option using full path.'
+        execution: "drupal chain \\\n  --file=\"/path/to/file/chain-file.yml\"\n"

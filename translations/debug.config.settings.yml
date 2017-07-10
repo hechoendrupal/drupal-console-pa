@@ -3,3 +3,7 @@ help: '<info>config:settings:debug</info> ਸੈਟਿੰਗ ਫਾਇਲ ਤੇ
 welcome: 'ਡਰੁੱਪਲ ਸੰਰਚਨਾ ਸੈਟਿੰਗ ਡੀਬੱਗ ਹੁਕਮ ਦਾ ਸੁਆਗਤ ਹੈ'
 messages:
     current: 'ਮੌਜੂਦਾ Key:value ਸੈਟਿੰਗ ਵਿਚ'
+examples:
+    -
+        description: 'Displays key:value as per the settings file'
+        execution: "drupal debug:config:settings\n"

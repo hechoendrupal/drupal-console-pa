@@ -3,3 +3,7 @@ options:
     group-name: 'ਬਰੇਕ ਪੁਆਇੰਟ ਗਰੁੱਪ ਦਾ ਨਾਮ'
 messages:
     name: 'ਬਰੇਕ ਪੁਆਇੰਟ ਦੇ ਨਾਲ ਇਕਸਟੈਨਸ਼ਨ'
+examples:
+    -
+        description: 'Provide a group name.'
+        execution: 'drupal breakpoints:debug bartik'
