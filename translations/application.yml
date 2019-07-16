@@ -1,6 +1,6 @@
 options:
     env: 'The Environment name'
-    no-debug: 'Switches off debug mode'
+    debug: 'Switches on debug mode'
     learning: 'Generate a verbose code output'
     generate-chain: 'Shows command options and arguments as yaml output to be used in chain command'
     generate-inline: 'Shows command options and arguments as inline command'
@@ -17,6 +17,7 @@ options:
     no-ansi: 'Disable ANSI output'
     no-interaction: 'Do not ask any interactive question'
     check-fix: 'Attempt to fix any missing configuration.'
+    no-debug: 'Switches off debug mode'
 arguments:
     command: 'The command to execute'
 messages:
@@ -29,6 +30,8 @@ messages:
     files:
         generated: 'Generated or updated files'
         copied: 'Copied files'
+    lines-code: 'Generated lines: %s'
+    path: 'Generation path'
     learning:
         route: "In order to to create pages it is necessary to define routes for them.\nA route maps a URL path to a controller. It defines what function\nor method will be called when a URL is accessed.\nIf the user accesses http://drupal8.dev/{{ route.path }}, the routing\nsystem will look for a route with that path. In this case it will find a\nmatch, and execute the _controller callback. In this case the callback is\ndefined as a classname\n(\"\\Drupal\\{{ module }}\\Controller\\{{ class_name }}\")\nand a method (\"{{ route.method }}\")."
     autocomplete: "Bash or Zsh: Add this line to your shell configuration file:\n<info>source \"$HOME/.console/console.rc\" 2>/dev/null</info>\n\nFish: Create a symbolic link\n<info>ln -s ~/.console/drupal.fish ~/.config/fish/completions/drupal.fish</info>\n"
@@ -40,6 +43,9 @@ messages:
 errors:
     invalid-command: 'Command "%s" do not exist.'
     renamed-command: 'Command "%s" was renamed, use "%s" instead.'
+    drush-command: 'Command "%s" is a Drush command (deprecated). Drupal Console equivalent "%s" was executed instead.'
+    statistics-failed: "The Drupal console failed to send statistics. After 10 attempts, this feature was disabled.\nIf you want to enable it again, use the following command:\n\n<info>drupal settings:set statistics.enabled true</info>\n"
+    statistics-url-failed: "The Drupal console failed to send statistics.\nYou must configure it in the global config.yml, use the following command and choose your preference:\n\n<info>drupal init</info>"
 site:
     messages:
         path: 'Site path'
